@@ -29,6 +29,9 @@ class App extends Component {
   render() {
     return (
       <>
+      <header className="jumbotron bg-secondary">
+          <h1 className="display-5 text-success">Classy Chirpr</h1>
+      </header>
         <div className="d-flex flex-direction-column">
           <div>
             <div className="input-group">
@@ -57,7 +60,6 @@ class App extends Component {
           >
             Post Chirp
           </button>
-          <h1 className="display-1">Hello World</h1>
           <div className="card-deck d-flex flex-column align-items-center col-8">
             {this.state.chirps
               .slice(0)
